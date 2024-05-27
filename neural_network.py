@@ -46,10 +46,11 @@ class NeuralNetwork:
 
         prev_layer_outputs = inputs
         for layer in self.hidden_layers:
-            current_layer_outputs = np.ndarray(shape=(1,
-                                                      self.num_inputs),
-                                               dtype=np.float64
-                                               )
+            current_layer_outputs = np.ndarray(
+                shape=(1, self.num_inputs),
+                dtype=np.float64
+            )
+
             for neuron in layer:
                 current_layer_outputs = np.append(
                     current_layer_outputs,
